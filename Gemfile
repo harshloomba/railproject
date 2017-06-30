@@ -12,6 +12,7 @@ gem 'jbuilder'
 
 group :development, :test do
   gem 'byebug', platform: :mri
+  gem 'sqlite3'
 end
 
 group :development do
@@ -19,6 +20,10 @@ group :development do
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
