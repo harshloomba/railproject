@@ -1,7 +1,6 @@
 source 'https://rubygems.org'
 
 gem 'rails'
-gem 'sqlite3'
 gem 'puma'
 gem 'sass-rails'
 gem 'uglifier'
@@ -15,10 +14,15 @@ group :development, :test do
 end
 
 group :development do
+  gem 'sqlite3'
   gem 'web-console'
   gem 'listen'
   gem 'spring'
   gem 'spring-watcher-listen'
+end
+
+group :production do
+  gem 'pg'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
