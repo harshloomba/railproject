@@ -8,6 +8,7 @@ gem 'coffee-rails'
 gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
+gem 'rails_12factor'
 
 group :development, :test do
   gem 'byebug', platform: :mri
