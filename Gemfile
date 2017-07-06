@@ -9,7 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder'
 gem 'rails_12factor'
-
+gem 'nokogiri', '~> 1.6.8.rc2'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
@@ -21,6 +21,14 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen'
 end
+
+group :test do
+  gem 'rails-controller-testing'
+  gem 'minitest-reporters'
+  gem 'guard'
+  gem 'guard-minitest'
+end
+
 
 group :production do
   gem 'pg'
