@@ -63,6 +63,11 @@
   570  cd ..
   571  cd ..
 rails generate controller StaticPages home help
+rails destroy  controller StaticPages home help
+rails destroy model User
+rails db:rollback
+To go all the way back to the beginning, we can use
+rails db:migrate VERSION=0
 
 ## Getting started with Sample app
 
