@@ -5,3 +5,8 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+users = User.order(:created_at).take(6)
+50.times do
+  content = 'dssdsspwwesaadsad'
+  users.each { |user| user.microposts.create!(content: content) }
+end
